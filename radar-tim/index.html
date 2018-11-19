@@ -19,44 +19,48 @@
          </div>
          <div class="header sticky-item-1">
             <div class="container-fluid">
-               <button class="sr-only btn btn-secondary-outline float-right toggle-compact">Compact View</button>
-               <div class="dropdown show policy-group">
-                  <a class="dropdown-toggle outer" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ALM
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                     <a class="dropdown-item active" href="radar.html">ALM</a>
-                     <a class="dropdown-item" href="epm.html">EPM</a>
-                     <a class="dropdown-item" href="phb.html">PHB</a>
-                  </div>
-               </div>
-
-               <button class="btn btn-secondary-outline filter-program-btn">Filter Program</button>
-
-               <div class="program-filer">
+				
+				<div class="row">
+               		<div class="col-md-9">
+               			<div class="dropdown show policy-group">
+                  			<a class="dropdown-toggle outer" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALM</a>
+                  				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                     				<a class="dropdown-item active" href="index.html">ALM</a>
+                     				<a class="dropdown-item" href="epm.html">EPM</a>
+                     				<a class="dropdown-item" href="phb.html">PHB</a>
+                  				</div>
+						</div> 
+					</div>
+					<div class="col-md-3">   
+				   		<button class="btn btn-secondary-outline filter-program-btn" style="float: right;"><i class="fas fa-filter"></i> Filter</button>
+						<ul class="inner-data-ul">
+                        <li class="li-toggle ITSB" data-target="#tableFilter"><span class="item">3</span></li>
+                     </ul>
+						<div class="program-filer">
                   
-                  <div class="options">
-                        <form id="programFilter" onsubmit="filterItems(); return false;">
-                              <input type="checkbox" name="programName" id="ISOF" value="ISOF" />
-                              <label class="form-check-label" for="ISOF">ISOF</label>
+                  <div class="options" style="float: right;">
+                        <form id="programFilter" onsubmit="filterItems(); return false;" style="float: right;">
 
 
-                              <input type="checkbox" name="programName" id="ESDD" value="ESDD" />
-                              <label class="form-check-label" for="ESDD">ESDD</label>
-
+                              <input type="checkbox" name="programName" id="ESDD" value="ACTO" />
+                              <label class="form-check-label" for="ACTO">Actuarial Office</label>
+								<br>
                               <input type="checkbox" name="programName" id="FINO" value="FINO" />
-                              <label class="form-check-label" for="FINO">FINO</label>
-
-                              <input type="checkbox" name="programName" id="ITSB" value="ITSB" />
-                              <label class="form-check-label" for="ITSB">ITSB</label>
-                             
-                                 
-                              <button type="submit" class="btn btn-primary">Apply Filter</button>
+                              <label class="form-check-label" for="FINO">Financial Office</label>
+								<br>
+                              <input type="checkbox" name="programName" id="ITSB" value="INVO" />
+                              <label class="form-check-label" for="INVO">Investment Office</label>
+								<br><br>                             
+                              <button type="submit" class="btn btn-primary">Apply</button>
                         </form>
                   </div>
                  
                   
                </div>
+					</div>   
+               		</div>
+
+               
 
    
                   
@@ -127,7 +131,7 @@
 				  <td headers="ic1 set1"></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ESDD"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -139,7 +143,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -147,7 +151,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ESDD"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -155,7 +159,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ITSB"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -163,7 +167,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ISOF"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -171,7 +175,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ISOF"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -179,7 +183,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="FINO"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -193,7 +197,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ITSB"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -233,7 +237,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="FINO"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -272,7 +276,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="FINO"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -321,7 +325,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ITSB"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -361,7 +365,7 @@
                   <td></td>
                   <td>                     
 					  <ul class="inner-data-ul">
-                        <li class="ESDD"><span class="placeholder">3</span></li>
+                        <li class="INVO"><span class="placeholder">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -394,13 +398,13 @@
                   <td></td>
                   <td>
 					  <ul class="inner-data-ul">
-                        <li class="li-toggle ITSB" data-target="#17Q2A3"><span class="item">3</span></li>
+                        <li class="li-toggle INVO" data-target="#17Q2A3"><span class="item">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
                   <td>
 				     <ul class="inner-data-ul">
-                        <li class="li-toggle FINO" data-target="#17Q4A3"><span class="item">3</span></li>
+                        <li class="li-toggle ACTO" data-target="#17Q4A3"><span class="item">3</span></li>
                      </ul>
 				  </td>
                   <td></td>
@@ -436,7 +440,7 @@
                   <td class="left-fixed-2">Approve significant financial policies (not including investment policies), actuarial policies, and service provider and employer contracting policies</td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle FINO" data-target="#17Q1A4"><span class="item">3</span></li>
+                        <li class="li-toggle INVO" data-target="#17Q1A4"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td></td>
@@ -444,7 +448,7 @@
                   <td></td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle ITSB ESDD" data-target="#18Q1A4"><span class="item">3</span></li>
+                        <li class="li-toggle FINO ACTO" data-target="#18Q1A4"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td>
@@ -454,12 +458,12 @@
                   </td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle ISOF" data-target="#18Q3A4"><span class="item">3</span></li>
+                        <li class="li-toggle ACTO" data-target="#18Q3A4"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle ESDD" data-target="#18Q4A4"><span class="item">3</span></li>
+                        <li class="li-toggle FINO" data-target="#18Q4A4"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td></td>
@@ -495,17 +499,17 @@
                   <td></td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle FINO" data-target="#18Q1A5"><span class="item">3</span></li>
+                        <li class="li-toggle ACTO" data-target="#18Q1A5"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle FINO" data-target="#18Q2A5"><span class="item">3</span></li>
+                        <li class="li-toggle ACTO FINO" data-target="#18Q2A5"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle ESDD" data-target="#18Q3A5"><span class="item">3</span></li>
+                        <li class="li-toggle ACTO" data-target="#18Q3A5"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td></td>
@@ -592,12 +596,12 @@
                   <td></td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle ITSB" data-target="#17Q4O1"><span class="item">3</span></li>
+                        <li class="li-toggle ERM" data-target="#17Q4O1"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td>
                      <ul class="inner-data-ul">
-                        <li class="li-toggle FINO" data-target="#18Q1O1"><span class="item">3</span></li>
+                        <li class="li-toggle ACTO" data-target="#18Q1O1"><span class="item">3</span></li>
                      </ul>
                   </td>
                   <td>
@@ -1207,17 +1211,35 @@ Defined Duration</a></li>
             <div class="agenda">
                <p><span class="label">Agenda Items</span>
                <ul>
-                  <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201802/financeadmin/item-7a-00_a.pdf" target="_blank">Amortization Policy (Second Reading)</a></li>
+                  <li>
+					  <a href="docs/Amortization Policy.pdf" target="_blank">Amortization Policy (2<sup>nd</sup> Reading)</a></br>
+					  <span class="sm-details"><strong>Program:</strong> Actuarial Office</br>
+				<strong>Item Type:</strong> Action</br>
+			 <strong>Supporting Materials: </strong></br>
+			 
+				<ul style="padding-bottom: 0;">
+					<li style="margin-left: 0em; list-style-type: none;"><a href="https://www.calpers.ca.gov/docs/actuarial-amortization-policy.pdf" target="_blank">Actuarial Amortization Policy</a></br>
+						v2.0 - 02/14/2018</span></li>
+				</ul>
+                  </li>
+				  
+                  <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201805/financeadmin/item-3c-00_a.pdf" target="_blank">Treasury Management Reserve Policy Review</a></br>
+					  <span class="sm-details"><strong>Program:</strong> Financial Office</br>
+					  <strong>Item Type:</strong> Information Consent<br><strong>Supporting Materials: </strong></br>
+			 
+				<ul style="padding-bottom: 0;">
+					<li style="margin-left: 0em; list-style-type: none;"><a href="https://www.calpers.ca.gov/docs/actuarial-amortization-policy.pdf" target="_blank">Treasury Management Reserve Policy</a></br>
+						v3.0 - 12/14/2017</span></li>
+				</ul>
+                  </li>
+                  
+                  <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201805/financeadmin/item-6b-00_a.pdf" target="_blank">Extension of the Third-Party Administrator (TPA) Contract for the Supplemental Income Plan (SIP) Programs</a></br>
+					  <span class="sm-details"><strong>Program:</strong> Financial Office</br>
+					  <strong>Item Type:</strong> Action</span> </li>
                </ul>
                </p>
             </div>
-	<div class="agenda">
-               <p><span class="label">Supporting Items</span>
-               <ul>
-                  <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201802/financeadmin/item-7a-00_a.pdf" target="_blank">Amortization Policy (Second Reading)</a></li>
-               </ul>
-               </p>
-            </div>
+	
          </div>
       </div>
 <div id="18Q2A4" class="overlay-sidebar sidebar45 approve-sidebar">
@@ -1241,13 +1263,38 @@ Defined Duration</a></li>
                <ul>
                   <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201805/financeadmin/item-5a-00_a.pdf" target="_blank">2018-19 Annual Budget Proposal (Second Reading-Final)</a></li>
                   <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201805/financeadmin/item-3b-00_a.pdf" target="_blank">Treasury Management Policy Review</a></li>
-                  <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201805/financeadmin/item-3c-00_a.pdf" target="_blank">Treasury Management Reserve Policy Review </a></li>
-                  <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201805/financeadmin/item-6b-00_a.pdf" target="_blank">Extension of the Third-Party Administrator (TPA) Contract for the Supplemental Income Plan (SIP) Programs</a> </li>
                </ul>
                </p>
             </div>
          </div>
       </div>
+
+<div id="tableFilter" class="overlay-sidebar sidebar45 approve-sidebar">
+         <div class="power-head-bg">
+            <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <h2>Filter Options</h2>
+         </div>
+         <div class="overlay-body">
+            <div class="details">
+               <p><span class="label">Quarter</span>2018 - Q3</p>
+               <p><span class="label">Committee</span>FAC</p>
+            </div>
+            <div class="details">
+               <p><span class="label">Specific Power Reserved</span>Approve significant financial policies (not including investment policies), actuarial policies, and service provider and employer contracting policies.</p>
+            </div>
+            <hr>
+            <div class="agenda">
+               <p><span class="label">Agenda Items</span>
+               <ul>
+                  <li><a href="https://www.calpers.ca.gov/docs/board-agendas/201809/financeadmin/item-8b-00_a.pdf" target="_blank">Proposed Revision to Amortization Policy Regarding Financial Necessity (1st Reading)</a></li>
+               </ul>
+               </p>
+            </div>
+         </div>
+</div>
+
 <div id="18Q3A4" class="overlay-sidebar sidebar45 approve-sidebar">
          <div class="power-head-bg">
             <button type="button" class="close" aria-label="Close">
